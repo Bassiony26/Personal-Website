@@ -1,0 +1,392 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+.Sep1 {
+  border: none;
+  height: 2px;
+  background: #3d72a4;
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+}
+.Sep2 {
+  border: none;
+  height: 2px;
+  background: black;
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+}
+em {
+  font-style: normal;
+  color: #3d72a4;
+  font-weight: bold;
+}
+.Main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.Menu {
+  padding-left: 80px;
+  padding-top: 20px;
+}
+.Menu li {
+  display: inline;
+  margin-right: 35px;
+  align-items: center;
+  float: left;
+}
+
+.Menu li a:hover {
+  color: #3d72a4;
+  text-shadow: 0px 0px 2-0px white;
+}
+
+.Menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.Social {
+  position: absolute;
+  right: 80px;
+  top: 10px;
+}
+
+.Social li {
+  width: 5px;
+  height: 5px;
+  display: inline;
+  align-items: center;
+  float: left;
+  padding-left: 50px;
+}
+
+.Social li a {
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+  border-radius: 10px;
+}
+
+.Social li a img {
+  width: 25px;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.Social li a img:hover {
+  background: #3d72a4;
+}
+
+.Main .MainTxt {
+  color: white;
+  font-size: 72px;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.Main .WatchBtn .Btn img {
+  width: 60px;
+  height: auto;
+  float: left;
+  margin-top: 15px;
+  margin-right: 20px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.Main .WatchBtn:hover img {
+  box-shadow: 0px 0px 30px #3d72a4;
+  transition: all 0.5s;
+  width: 70px;
+  height: auto;
+}
+
+.Main .WatchBtn:hover p {
+  color: #3d72a4;
+  transition: all 0.5s;
+  font-size: 28px;
+}
+
+.Main .WatchBtn .BtnTxt {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: lighter;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 5px;
+}
+
+.TopBtn {
+  position: fixed;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background: #3d72a4;
+  bottom: 40px;
+  right: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.Sub {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.Sub .Title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 50px;
+  text-align: center;
+  color: #3d72a4;
+}
+
+.Sub .SubTitle {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.Sub .Rate {
+  display: block;
+  width: 80px;
+  padding-left: 44px;
+  padding-top: 5px;
+  align-items: left;
+  text-align: left;
+}
+
+.User {
+  position: relative;
+  align-items: center;
+  display: flex;
+  word-wrap: normal;
+  padding-top: 40px;
+  margin: 0 25% 0 25%;
+  color: rgb(121, 121, 121);
+  text-align: left;
+
+  margin-bottom: 40px;
+}
+
+.User img {
+  width: 250px;
+  height: auto;
+  clip-path: circle(70px at center);
+  float: left;
+}
+
+.LSection {
+  display: inline-block;
+  border: 2px solid black;
+  width: 25%;
+  height: 510px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.RSection {
+  display: inline-block;
+  border: 2px solid black;
+  width: 25%;
+  height: 510px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.Cat {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+}
+
+.SubCat {
+  text-align: left;
+  padding-left: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(14, 14, 14);
+  padding-top: 20px;
+}
+
+.Info {
+  text-align: left;
+  padding-left: 45px;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: rgb(121, 121, 121);
+}
+
+.Button {
+  padding-top: 110px;
+}
+.Button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 75px 15px 75px;
+  border-radius: 15px;
+}
+
+.Button a:hover {
+  color: white;
+  border: 2px solid #3d72a4;
+  background-color: #3d72a4;
+}
+.Edu {
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 40%;
+  padding-top: 40px;
+}
+.Edu img {
+  display: flex;
+  width: 3%;
+  float: left;
+  margin-top: 45px;
+  margin-left: 37%;
+  margin-right: 2%;
+}
+
+.Sub .Title2 {
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 80px;
+  text-align: center;
+  color: #3d72a4;
+}
+
+.Cat2 {
+  display: flex;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.SubCat2 {
+  text-align: left;
+  display: flex;
+  margin-left: 42.5%;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(14, 14, 14);
+  padding-top: 5px;
+}
+
+.Info2 {
+  text-align: left;
+  display: flex;
+  margin-left: 42.5%;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+  color: rgb(121, 121, 121);
+  padding-top: 10px;
+}
+
+.Field {
+  padding-top: 30px;
+}
+
+.Field #Name {
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(248, 248, 248);
+  border: 2px solid black;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.Field #Email {
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(248, 248, 248);
+  border: 2px solid black;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.Field #Subject {
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(248, 248, 248);
+  border: 2px solid black;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+.Field #Message {
+  width: 90%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(248, 248, 248);
+  border: 2px solid black;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.Field #Name:focus,
+.Field #Email:focus,
+.Field #Subject:focus,
+.Field #Message:focus {
+  outline: none !important;
+  border-color: #3d72a4;
+  box-shadow: 0 0 10px #3d72a4;
+}
+
+#Footer {
+  color: white;
+  padding-top: 35px;
+}
